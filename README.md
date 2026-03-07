@@ -1,6 +1,6 @@
 # Credit Risk Predictor 🏦
 
-This repository contains the deployment files for **Assignment 3: NLP & ML Project Development**. 
+This directory contains the deployment files for **Assignment 3: NLP & ML Project Development**. 
 A machine learning model trained to predict whether a credit applicant is a **Good** or **Bad** credit risk, based on a dataset of representative instances from the German Credit dataset.
 
 ## Files Included
