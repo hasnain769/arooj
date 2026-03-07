@@ -4,6 +4,17 @@ import joblib
 
 st.set_page_config(page_title="Credit Risk Predictor", page_icon="🏦", layout="centered")
 
+# Hide the Streamlit Deploy button, GitHub icon, and Main Menu
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            .stDeployButton {display:none;}
+            .stApp a[href*="github.com"] {display: none;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 @st.cache_resource
 def load_model():
     return joblib.load('credit_risk_model.pkl')
